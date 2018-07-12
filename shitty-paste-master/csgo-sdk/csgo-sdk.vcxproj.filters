@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{ed2bdd03-4d46-460f-b888-5ca1da6814bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack">
+      <UniqueIdentifier>{a0566ff6-292a-442e-951f-845c5f09170b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Basics">
+      <UniqueIdentifier>{4600ff7b-77de-41d6-983d-3645f1e7a37e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Components">
+      <UniqueIdentifier>{aa1dcc98-2bb9-4798-b9c4-31e59c467cf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Helpers">
+      <UniqueIdentifier>{60406eef-f09a-4e26-8998-46cdc5c22a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Hooks">
+      <UniqueIdentifier>{fe1a6402-172f-4c13-b6e1-c79c65930d76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Menu">
+      <UniqueIdentifier>{04807bf8-e9ed-46dc-8b02-1edc8eb51a99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Menu\Elements">
+      <UniqueIdentifier>{15811cc7-6bc8-4a41-88a2-870d0db908f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Menu\Pre-requisites">
+      <UniqueIdentifier>{60bcb738-1047-4c23-a2d9-91648f698ea6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Menu\Rendering">
+      <UniqueIdentifier>{ca0a9ff3-730f-44e5-9c0c-96f26ca9afc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Menu\Icons">
+      <UniqueIdentifier>{c06a364a-6a11-4b3d-9b2c-d1fc14fcc79f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{ebb10150-5d46-485b-adf9-d35c3ac321c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Classes / Structs">
+      <UniqueIdentifier>{072b724f-2a15-40b6-8d13-8c05a660eb41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Interfaces">
+      <UniqueIdentifier>{fd1fc5e1-7405-43b2-9f7d-ba5b5000ed66}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\stb_rect_pack.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\stb_textedit.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\stb_truetype.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\dx9\imgui_dx9.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\GameMovement.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\IBaseClientDLL.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\IClientEntityList.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\IClientModeShared.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\ICvar.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\IEngineClient.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\IEngineTrace.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\IGlobalVarsBase.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\IInputSystem.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\IMaterial.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\IMaterialSystem.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\IMDLCache.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\IMoveHelper.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\INetChannelInfo.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\IPrediction.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\IRenderView.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\IStudioRender.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\ISurface.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\IVDebugOverlay.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\IVModelInfo.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\IVModelRender.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\IVPanel.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Interfaces\VEngineEffects.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\BaseEntityList.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\BaseHandle.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\CEntity.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\Checksum_Md5.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\CHLClient.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\ClientClass.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\Color.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\ConVar.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\CUtlVector.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\GlowManager.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\HudChat.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\IEntity.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\Input.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\KeyValues.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\Matrix3x4_t.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\ModelInfo.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\QAngle.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\Structs.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\SurfaceData.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\Trace.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\UserCmd.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\Vector.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\ViewSetup.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\VPhysics.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Classes Structs\WeaponInfo.h">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\DefEnums.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\SDK.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Helpers\Antiaim.h">
+      <Filter>Hack\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Helpers\Autowall.h">
+      <Filter>Hack\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Helpers\Backtracking.h">
+      <Filter>Hack\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Helpers\DrawManager.h">
+      <Filter>Hack\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Helpers\GrenadePrediction.h">
+      <Filter>Hack\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Helpers\Lagcompensation.h">
+      <Filter>Hack\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Helpers\Prediction.h">
+      <Filter>Hack\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Helpers\Resolver.h">
+      <Filter>Hack\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Components\Aimbot.h">
+      <Filter>Hack\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Components\Miscellaneous.h">
+      <Filter>Hack\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Components\Visuals.h">
+      <Filter>Hack\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Basics\Config.h">
+      <Filter>Hack\Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Basics\ConfigLoader.h">
+      <Filter>Hack\Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Basics\Math.h">
+      <Filter>Hack\Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Basics\NetvarManager.h">
+      <Filter>Hack\Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Basics\Util.h">
+      <Filter>Hack\Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Basics\CHook.h">
+      <Filter>Hack\Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Global.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Hooks.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Interfaces.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\MENU.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Offsets.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="csgo-sdk.h" />
+    <ClInclude Include="Hack\Menu\Menu.h">
+      <Filter>Hack\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\MenuBaseElement.h">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\MenuCategory.h">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\MenuCheckbox.h">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\MenuColorpicker.h">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\MenuControls.h">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\MenuDropdown.h">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\MenuGroupbox.h">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\MenuKeybind.h">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\MenuSavePanel.h">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\MenuSlider.h">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\MenuSmallWindow.h">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\MenuTab.h">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\MenuTextbox.h">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\MenuWindow.h">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\Render.h">
+      <Filter>Hack\Menu\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\dirent.h">
+      <Filter>Hack\Menu\Pre-requisites</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\tinyxml.h">
+      <Filter>Hack\Menu\Pre-requisites</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\Icons\misc.h">
+      <Filter>Hack\Menu\Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\Icons\rage.h">
+      <Filter>Hack\Menu\Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\Icons\visual.h">
+      <Filter>Hack\Menu\Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\Icons\config.h">
+      <Filter>Hack\Menu\Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="Hack\Menu\Icons\legit.h">
+      <Filter>Hack\Menu\Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEvents.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="ConservativeAutowall.h">
+      <Filter>Hack\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialHelper.h">
+      <Filter>Hack\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerSimulation.h">
+      <Filter>Hack\Helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_colorpicker.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_tablabel.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\dx9\imgui_dx9.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\Interfaces\IBaseClientDLL.cpp">
+      <Filter>SDK\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\Interfaces\IInputSystem.cpp">
+      <Filter>SDK\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\Interfaces\IMaterialSystem.cpp">
+      <Filter>SDK\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\Interfaces\IPhysicsSurfaceProps.cpp">
+      <Filter>SDK\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\Interfaces\IPrediction.cpp">
+      <Filter>SDK\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\Interfaces\ISurface.cpp">
+      <Filter>SDK\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\Interfaces\IVModelRender.cpp">
+      <Filter>SDK\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\Interfaces\IVPanel.cpp">
+      <Filter>SDK\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\Classes Structs\CEntity.cpp">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\Classes Structs\Checksum_Md5.cpp">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\Classes Structs\ConVar.cpp">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\Classes Structs\Trace.cpp">
+      <Filter>SDK\Classes / Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Helpers\Antiaim.cpp">
+      <Filter>Hack\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Helpers\Autowall.cpp">
+      <Filter>Hack\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Helpers\Backtracking.cpp">
+      <Filter>Hack\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Helpers\DrawManager.cpp">
+      <Filter>Hack\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Helpers\GrenadePrediction.cpp">
+      <Filter>Hack\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Helpers\Lagcompensation.cpp">
+      <Filter>Hack\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Helpers\Prediction.cpp">
+      <Filter>Hack\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Helpers\Resolver.cpp">
+      <Filter>Hack\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Components\Aimbot.cpp">
+      <Filter>Hack\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Components\Miscellaneous.cpp">
+      <Filter>Hack\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Components\Visuals.cpp">
+      <Filter>Hack\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Basics\Config.cpp">
+      <Filter>Hack\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Basics\ConfigLoader.cpp">
+      <Filter>Hack\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Basics\Math.cpp">
+      <Filter>Hack\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Basics\NetvarManager.cpp">
+      <Filter>Hack\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Basics\Util.cpp">
+      <Filter>Hack\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Hooks\CreateMove.cpp">
+      <Filter>Hack\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Hooks\EndScene.cpp">
+      <Filter>Hack\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Hooks\FrameStageNotify.cpp">
+      <Filter>Hack\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Hooks\OverrideView.cpp">
+      <Filter>Hack\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Hooks\PaintTraverse.cpp">
+      <Filter>Hack\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Hooks\Present.cpp">
+      <Filter>Hack\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Hooks\Proxies.cpp">
+      <Filter>Hack\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Hooks\Reset.cpp">
+      <Filter>Hack\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Hooks\RunCommand.cpp">
+      <Filter>Hack\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Hooks\TraceRay.cpp">
+      <Filter>Hack\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Hooks\WndProc.cpp">
+      <Filter>Hack\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Basics\CHook.cpp">
+      <Filter>Hack\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Global.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Interfaces.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Offsets.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="Entry-point.cpp" />
+    <ClCompile Include="GetLastTimeStamp.cpp">
+      <Filter>Hack\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Menu\Menu.cpp">
+      <Filter>Hack\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Menu\MenuCategory.cpp">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Menu\MenuCheckbox.cpp">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Menu\MenuColorpicker.cpp">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Menu\MenuDropdown.cpp">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Menu\MenuGroupbox.cpp">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Menu\MenuKeybind.cpp">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Menu\MenuSavePanel.cpp">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Menu\MenuSlider.cpp">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Menu\MenuSmallWindow.cpp">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Menu\MenuTab.cpp">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Menu\MenuTextbox.cpp">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Menu\MenuWindow.cpp">
+      <Filter>Hack\Menu\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Menu\Render.cpp">
+      <Filter>Hack\Menu\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Hack\Menu\tinyxml.cpp">
+      <Filter>Hack\Menu\Pre-requisites</Filter>
+    </ClCompile>
+    <ClCompile Include="IsConnected.cpp">
+      <Filter>Hack\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="IsPlayingTimeDemo.cpp">
+      <Filter>Hack\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawModelExecute.cpp">
+      <Filter>Hack\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="FireEvent.cpp">
+      <Filter>Hack\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="ConservativeAutowall.cpp">
+      <Filter>Hack\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialHelper.cpp">
+      <Filter>Hack\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="FireBulletPostDataUpdate.cpp">
+      <Filter>Hack\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerSimulation.cpp">
+      <Filter>Hack\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawHuso.cpp">
+      <Filter>Hack\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="FindMDL.cpp">
+      <Filter>Hack\Hooks</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

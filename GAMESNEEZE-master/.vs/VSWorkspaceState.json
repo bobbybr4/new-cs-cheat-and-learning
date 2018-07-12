@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "\\meme_cheat",
+    "\\meme_cheat\\features",
+    "\\meme_cheat\\features\\aimbot",
+    "\\meme_cheat\\features\\anti-aim",
+    "\\meme_cheat\\features\\autowall",
+    "\\meme_cheat\\features\\engine prediction",
+    "\\meme_cheat\\features\\fake lag",
+    "\\meme_cheat\\features\\grenade pred",
+    "\\meme_cheat\\gui",
+    "\\meme_cheat\\hooks"
+  ],
+  "PreviewInSolutionExplorer": false
+}
